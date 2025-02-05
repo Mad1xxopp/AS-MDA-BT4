@@ -10,6 +10,9 @@ A blockchain-based decentralized marketplace that allows users to buy and sell A
 - Seamless wallet connection using [MetaMask](https://metamask.io/).
 - Users can connect their wallets and interact with the blockchain.
 
+  ![image](https://github.com/user-attachments/assets/539eb334-5220-4f4e-aa3b-4e8ac7844be8)
+
+
 ### 2. Token Balance Display
 - Display the user's ERC-20 token balance directly on the platform.
 - A refresh button allows users to update their token balance in real time.
@@ -22,9 +25,15 @@ A blockchain-based decentralized marketplace that allows users to buy and sell A
   - Secure file upload or download link
 - Buyers can view model details and purchase them.
 
+  ![image](https://github.com/user-attachments/assets/2d245779-c0c6-4fe2-92b9-4ccb9b34ace7)
+
+
 ### 4. Purchase Flow
 - Buyers initiate purchases by transferring ERC-20 tokens to the seller's wallet.
 - The marketplace UI updates to reflect the completed sale, marking the model as sold or adjusting inventory.
+
+  ![Uploading image.png…]()
+
 
 ---
 
