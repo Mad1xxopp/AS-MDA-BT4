@@ -62,5 +62,5 @@ This project relies on the following technologies and packages:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-link>
-cd <repository-folder>
+git clone https://github.com/Mad1xxopp/AS-MDA-BT4.git
+cd AS-MDA-BT4
