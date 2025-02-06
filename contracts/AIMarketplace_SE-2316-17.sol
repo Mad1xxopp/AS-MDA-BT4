@@ -83,7 +83,6 @@ contract AIMarketplace is ERC20, Ownable {
         return transactions[transactions.length - 1].receiver;
     }
 
-    // New marketplace functions
     function listModel(string memory name, string memory description, uint256 price) public returns (uint256) {
         require(bytes(name).length > 0, "Name cannot be empty");
         require(price > 0, "Price must be greater than 0");
@@ -111,14 +110,11 @@ contract AIMarketplace is ERC20, Ownable {
 
         AIModel storage model = models[modelId];
 
-        // Проверяем, что маркетплейс одобрен на снятие токенов
         uint256 allowance = allowance(msg.sender, address(this));
         require(allowance >= model.price, "Approve the marketplace to spend tokens");
 
-        // Переводим токены через transferFrom
         _transfer(msg.sender, model.creator, model.price);
 
-        // Фиксируем покупку
         purchases[msg.sender][modelId] = true;
 
         emit ModelPurchased(modelId, msg.sender);
@@ -170,4 +166,5 @@ contract AIMarketplace is ERC20, Ownable {
             model.numberOfRatings
         );
     }
+    
 }
